@@ -1,4 +1,5 @@
 # C.Code
+#include<stdio.h>
 int main(){
 int i,j;
 for(int i=0;i<8;i++){
