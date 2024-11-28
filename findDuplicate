@@ -1,0 +1,18 @@
+int findDuplicate(int*nums[],int numsSzie){
+	int i,left = 1;
+	int numsSize,right = numsSize - 1;
+	int mid = numsSize/2;
+    while(left != right){
+		int count = 0;
+		for(int i=0;i<numsSize;i++){
+			if(nums[i]<mid) count ++;
+		}
+		if(count>mid){
+			right = mid;
+		}else
+			left = mid +1;//因为最后要返回的是left
+		mid = (left + right)/2;
+		
+	}
+	return left;
+}
