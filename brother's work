@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main(){
+	int a,b,c,count = 0;
+	char e,d[2];
+	while((scanf("%d%c%d=%s",&a,&e,&b,&d)) != EOF){
+		c = atoi(d);//这个库函数可以将输入的字符转化为整数
+		if(a-b==c||a+b==c){
+			count++;
+		}
+			printf("%d\n",count);
+	}
+
+	return 0;
+}
