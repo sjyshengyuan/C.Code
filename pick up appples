@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+	int a[10];
+	int m;
+			scanf("%d",&m);
+	int cout = 0;
+	for(int i=0;i<10;i++){
+	    scanf("%d",&a[i]);
+	}
+    scanf("%d",&m);
+	m = m + 30;
+	for(int i=0;i<10;i++){
+	    if(a[i]<=m){
+			cout++;
+		}
+	}
+	printf("%d",cout);
+	
+	return 0;
+}
