@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+	int a = 0,b = 0,m,n,t,l = 0;
+	
+	scanf("%d%d",&m,&n);
+	a = m;
+	b = n;
+	while(n != 0){
+		t = m % n;
+		m = n;
+		n = t;
+	}
+	l = (a*b)/m;
+	printf("最大公约数为:%d\n",m);
+	printf("最小公倍数为:%d\n",l);
+	return 0;
+}
